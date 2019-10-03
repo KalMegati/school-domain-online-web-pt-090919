@@ -1,5 +1,3 @@
-# code here!
-
 class School
   
   def initialize(model)
@@ -21,7 +19,7 @@ class School
   end
   
   def sort
-    @roster.each { |grade, students| students.sort! }
+    @roster.map { |grade, students| students.sort }
   end
   
 end
